@@ -1,0 +1,85 @@
+<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+
+# задан стиль css: <p style="color: green !important;">. Напиши ccs стиль для данного примера, который сможет изменить цвет тега "p".  Условие: удалять встроенный стиль нельзя! Использовать JavaScript нельзя!
+
+Для изменения цвета тега <p> с уже заданным встроенным стилем (inline style) color: green !important, при условии что нельзя удалять этот встроенный стиль и нельзя использовать JavaScript, можно переопределить цвет только с помощью CSS, используя более специфичный селектор и также применяя !important.
+
+Кроме того, чтобы иметь возможность переопределить встроенный стиль с !important (который имеет максимальный приоритет), надо использовать селектор с таким же или более высоким уровнем специфичности и также добавить !important.
+
+Пример CSS, который сможет изменить цвет tега <p> с встроенным стилем color: green !important:
+
+```css
+html body p {
+    color: red !important;
+}
+```
+
+Или можно использовать более специфичный селектор, например добавив атрибутный селектор, который точно указывает на тег с inline стилем:
+
+```css
+p[style] {
+    color: red !important;
+}
+```
+
+Этот стиль применит красный цвет ко всем <p>, у которых есть атрибут style, переопределяя inline стиль с green !important.
+
+Таким образом, для заданного примера:
+
+```html
+<p style="color: green !important;">Текст</p>
+```
+
+CSS будет:
+
+```css
+p[style] {
+    color: red !important;
+}
+```
+
+Это позволит переопределить встроенный стиль по цвету без удаления inline стиля и без JavaScript.[^1][^2][^3][^4]
+<span style="display:none">[^10][^11][^12][^13][^14][^15][^16][^17][^18][^19][^20][^5][^6][^7][^8][^9]</span>
+
+<div align="center">⁂</div>
+
+[^1]: https://css-tricks.com/override-inline-styles-with-css/
+
+[^2]: https://stackoverflow.com/questions/16813220/how-can-i-override-inline-styles-with-external-css
+
+[^3]: https://cssdeck.com/blog/how-to-override-inline-css-styles/
+
+[^4]: https://www.geeksforgeeks.org/css/how-to-override-inline-styles-with-external-in-css/
+
+[^5]: https://www.sitepoint.com/override-inline-css/
+
+[^6]: https://stackoverflow.com/questions/12521143/can-i-override-an-elements-inline-style-in-my-stylesheet
+
+[^7]: https://stackoverflow.com/questions/63357211/html5-using-p-style-with-color-and-font
+
+[^8]: https://www.w3schools.com/css/css_specificity.asp
+
+[^9]: https://www.w3schools.com/html/html_css.asp
+
+[^10]: https://stackoverflow.com/questions/11263488/css-override-rules-and-specificity
+
+[^11]: https://wp-mix.com/override-inline-css-styles/
+
+[^12]: https://forum.freecodecamp.org/t/changing-text-color-inline-vs-in-a-style-block/282513
+
+[^13]: https://github.com/styled-components/styled-components-website/issues/187
+
+[^14]: https://reactgo.com/css-override-inline-styles/
+
+[^15]: https://www.reddit.com/r/HTML/comments/s4uuya/can_i_change_the_color_of_a_line_of_text_in_the/
+
+[^16]: https://dev.to/nicm42/css-overriding-styles-177k
+
+[^17]: https://forum.freecodecamp.org/t/basic-css-override-class-declarations-with-inline-styles-2/239258
+
+[^18]: https://www.codecademy.com/article/html-inline-styles
+
+[^19]: https://dev.to/parayan00/how-to-override-css-style-2nh8
+
+[^20]: https://www.nickyeoman.com/page/css-override-inline-styles
+
