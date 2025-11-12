@@ -1,14 +1,16 @@
-/*body {
+/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
+body {
    background-color: lightgrey;
-   }
-
-body p::first-line {
-   color:red;
 }
-/*
-body p::first-letter {
-   color:red;
+
+/*   стили для меню  */
+ul li {
+  display: inline-block;
+  margin: 5px 10px;
+  list-style-type: none;
 }
-*/
 
-
+/*   стили для изменения (обхода) встроенного стиля */
+body p{
+   filter: hue-rotate(210deg);   
+}

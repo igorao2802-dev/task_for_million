@@ -1,17 +1,16 @@
+/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
 body {
    background-color: lightgrey;
- /*  filter: invert(100%);  
-   filter: hue-rotate(200deg)   */
-   
-   }
-
-p {
-  all: revert !important;  /* откатываем к стилям по умолчанию браузера */
-  color: blue !important;  /* задаём новый цвет */
 }
 
+/*   стили для меню  */
+ul li {
+  display: inline-block;
+  margin: 5px 10px;
+  list-style-type: none;
+}
 
-
-
-
-
+/*   стили для изменения (обхода) встроенного стиля */
+body p {
+   filter: invert(100%);  
+}

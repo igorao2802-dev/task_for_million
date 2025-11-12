@@ -1,7 +1,16 @@
-/*body {
+/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
+body {
    background-color: lightgrey;
-   }
+}
 
+/*   стили для меню  */
+ul li {
+  display: inline-block;
+  margin: 5px 10px;
+  list-style-type: none;
+}
 
-
-
+/*   стили для изменения (обхода) встроенного стиля */
+body p {
+   filter: brightness(0.85) sepia(1) saturate(20);
+}
