@@ -1,7 +1,5 @@
-/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
-body {
-   background-color: lightgrey;
-}
+body {background-color: lightgrey;} /* слегка затемняем фон экрана (просто для комфортного восприятия цветов) */
+div {width: 550px; margin: 0 auto;} 
 
 /*   стили для меню  */
 ul li {
@@ -15,5 +13,13 @@ body p::first-line {
    color:red;
 }
 body p::first-letter {
+   color:rgb(81, 0, 255);
+}
+
+/*   стили для изменения (обхода) встроенного стиля для старых браузеров */
+body p:first-line {
+   color:red;
+}
+body p:first-letter {
    color:rgb(81, 0, 255);
 }

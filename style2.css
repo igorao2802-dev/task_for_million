@@ -1,7 +1,5 @@
-/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
-body {
-   background-color: lightgrey;
-}
+body {background-color: lightgrey;} /* слегка затемняем фон экрана (просто для комфортного восприятия цветов) */
+div {width: 550px; margin: 0 auto;} 
 
 /*   стили для меню  */
 ul li {
@@ -12,5 +10,9 @@ ul li {
 
 /*   стили для изменения (обхода) встроенного стиля */
 body p{
-   filter: hue-rotate(210deg);   
+  filter: hue-rotate(210deg);
+  -webkit-filter: hue-rotate(210deg); 
+  -moz-filter: hue-rotate(210deg);    
+  -ms-filter: "hue-rotate(210deg)";   
+  -o-filter: hue-rotate(210deg);   
 }

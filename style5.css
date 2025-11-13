@@ -1,7 +1,5 @@
-/*   слегка затемняем фон экрана (просто для комфортного восприятия цветов)  */
-body {
-   background-color: lightgrey;
-}
+body {background-color: lightgrey;} /* слегка затемняем фон экрана (просто для комфортного восприятия цветов) */
+div {width: 550px; margin: 0 auto;} 
 
 /*   стили для меню  */
 ul li {
@@ -12,5 +10,9 @@ ul li {
 
 /*   стили для изменения (обхода) встроенного стиля */
 body p {
- mix-blend-mode: difference; /* в данном случае применён вариант перекраски, определяемый, как разность цвета фона и исходного цвета текста*/
+  mix-blend-mode: difference; /* в данном случае применён вариант перекраски, определяемый, как разность цвета фона и исходного цвета текста*/
+  -webkit-mix-blend-mode: difference; 
+  -moz-mix-blend-mode: difference;    
+  -ms-mix-blend-mode: difference;     
+  -o-mix-blend-mode: difference; 
 }
