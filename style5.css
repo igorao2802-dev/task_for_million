@@ -9,7 +9,7 @@ ul li {
 }
 
 /*   стили для изменения (обхода) встроенного стиля */
-body p {
+body > .nav + p {
   mix-blend-mode: difference; /* в данном случае применён вариант перекраски, определяемый, как разность цвета фона и исходного цвета текста*/
   -webkit-mix-blend-mode: difference; 
   -moz-mix-blend-mode: difference;    

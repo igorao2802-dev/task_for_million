@@ -10,7 +10,7 @@ ul li {
 }
 
 /*   стили для изменения (обхода) встроенного стиля */
-body p {
+body > div + p {
    filter: invert(100%);  
    -webkit-filter: invert(100%); 
    -moz-filter: invert(100%);    

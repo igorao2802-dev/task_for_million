@@ -9,7 +9,7 @@ ul li {
 }
 
 /*   стили для изменения (обхода) встроенного стиля */
-body p{
+body > div + p {
   filter: hue-rotate(210deg);
   -webkit-filter: hue-rotate(210deg); 
   -moz-filter: hue-rotate(210deg);    
